@@ -1,0 +1,14 @@
+{
+  "name": "rfid",
+  "version": "0.0.0",
+  "description": "playing around with j5 and rfid scanning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan Hirsch",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "johnny-five": "~0.7.3"
+  }
+}
