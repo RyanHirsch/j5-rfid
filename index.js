@@ -24,7 +24,7 @@ var	j5 = require('johnny-five'),
 var serialport = require("serialport");
 var SerialPort = serialport.SerialPort; // localize object constructor
 
-var sp = new SerialPort("/dev/tty-usbserial1", { 
+var sp = new SerialPort("/dev/cu.usbmodemfa141", { 
   parser: serialport.parsers.readline("\r") ,
   baudrate: 2400
 }, false);
