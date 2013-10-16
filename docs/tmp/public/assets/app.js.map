@@ -1,0 +1,16 @@
+{
+  "version": 3,
+  "file": "app.js",
+  "sources": [
+    "tmp/transpiled/app/app.js",
+    "tmp/transpiled/app/routes.js",
+    "tmp/transpiled/app/routes/index.js"
+  ],
+  "names": [],
+  "mappings": "AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA,K;AChBA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA,K;ACbA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA,K",
+  "sourcesContent": [
+    "define(\"appkit/app\",\n  [\"resolver\",\"appkit/routes\"],\n  function(Resolver, routes) {\n    \"use strict\";\n\n    var App = Ember.Application.create({\n      LOG_ACTIVE_GENERATION: true,\n      LOG_VIEW_LOOKUPS: true,\n      modulePrefix: 'appkit', // TODO: loaded via config\n      Resolver: Resolver\n    });\n\n    App.Router.map(routes); // TODO: just resolve the router\n\n\n    return App;\n  });",
+    "define(\"appkit/routes\",\n  [],\n  function() {\n    \"use strict\";\n    function Routes() {\n      // // routes/resources\n      // this.resource('posts', function() {\n      //   this.route('new');\n      // });\n    }\n\n\n    return Routes;\n  });",
+    "define(\"appkit/routes/index\",\n  [],\n  function() {\n    \"use strict\";\n    var IndexRoute = Ember.Route.extend({\n      model: function() {\n        return ['EmberJS', 'AngularJS', 'BackboneJS'];\n      }\n    });\n\n\n    return IndexRoute;\n  });"
+  ]
+}

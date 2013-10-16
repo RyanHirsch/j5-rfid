@@ -1,0 +1,10 @@
+{
+  "locals": {
+    "name": "Ember App Kit",
+    "url": "http://example.com/",
+    "dev": "http://localhost:8000",
+    "description": "",
+    "keywords": ""
+  },
+  "output": "./tmp/public"
+}
